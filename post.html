@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+     crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="default.css">
+    <link id="theme-style" rel="stylesheet" href="">
+    <link id="theme-style" rel="stylesheet" href="">
+    <link id="theme-style" rel="stylesheet" href="">
+    <style>
+      body {
+    background-color: #15202B;}
+        .collapsible {
+          background-color: #111921;
+          color: #fff;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+        }
+        .active, .collapsible:hover {
+  background-color: #192734;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: #164D56;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #164D56;
+}
+</style>
+</head>
+<body>
+    <div class="nav-wrapper">
+        <div class="dots-wrapper">
+            <div id="dot-1"class="browser-dot"></div>
+            <div id="dot-2"class="browser-dot"></div>
+            <div id="dot-3"class="browser-dot"></div>
+        </div>
+       
+    </div>
+    <div class="main-containter">
+        <h1>My projects in C</h1>
+        <button class="collapsible">First Project -  Online streaming system</button>
+        <div class="content">
+          <p>
+            The application allows the user to register, log in and log out. Every user
+            has a list of channels to which it subscribes. It can search for a channel,
+             subscribe or unsubscribe from one and can assign a rating from 1 to 5 to that channel 
+             according to their own preference.
+            The application will allow the display of a top 25 channels depending on the rating received
+             (regardless of whether the user is logged in or not). </p>
+             <div class="social-links">
+                <h3>Github Link for code:</h3>
+                <i class="fa fa-github" style="font-size:48px;color:red"></i>
+                <a target="_blank" href="https://github.com/Crefi/C-project--Online-streaming-system/blob/main/main.c">Github: @Crefi</a>
+            </div>
+             <img  src="/images/c-project.png" alt="c.pic">
+
+             
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
